@@ -9,10 +9,7 @@ description: 'a blog records my life'
 keywords:
   - security
 author: Hanwei He
-language:
-  - zh-CN
-  - en
-  - zh-TW
+language: 'en'
 timezone: 'Asia/Shanghai'
 
 # URL
