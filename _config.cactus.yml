@@ -15,9 +15,9 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
   articles: /archives/
   projects: https://github.com/nogiveme
+  about: /about/
 
 
 # Links to your social media accounts.
