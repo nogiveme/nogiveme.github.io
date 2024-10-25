@@ -5,11 +5,13 @@
 # Site
 title: hiblog
 subtitle: "Hanwei He's blog"
-description: 'a blog records my life'
+description: '盈科而后进，放乎四海'
 keywords:
   - security
 author: Hanwei He
-language: 'en'
+language:
+  - en
+  - zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -91,9 +93,9 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+# include:
+# exclude:
+# ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
