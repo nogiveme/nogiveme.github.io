@@ -9,7 +9,7 @@ description: '盈科而后进，放乎四海'
 keywords:
   - security
 author: Hanwei He
-language: en
+language: [en, zh-CN]
 timezone: 'Asia/Shanghai'
 
 # URL
