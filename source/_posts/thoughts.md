@@ -1,7 +1,7 @@
 ---
 title: thoughts
 date: 2024-06-27 21:40:35
-tags:思考
+tags: think
 ---
 
 # 个人思考
