@@ -12,6 +12,26 @@ tags:
 
 `github`的`release`中选择`x86_win32_ucrt`版本
 
+#### gcc multi version control
+
+```
+sudo apt-get install -y gcc-7 g++-7
+```
+
+```
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 100
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 100
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100
+```
+
+```
+#切换gcc版本
+sudo update-alternatives --config gcc
+#切换g++版本
+sudo update-alternatives --config g++
+```
+
 ## Git
 
 ### 克隆失败
@@ -46,12 +66,11 @@ submodule is designed to resolve problem that import other's project.
 
 想要在`powershell`中能够切换`conda`虚拟环境，需要使用`conda init powershell`创建脚本文件，从而可以实现虚拟环境的切换。重启`powershell`后会出现错误：`can not load file`。这是因为`powershell`**默认不允许**执行`powershell`脚本，需要修改注册表规则，允许其执行脚本`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
 
-## 换镜像源
-
-### pip
+## PIP
 
 * 查看当前源：
 * 更换镜像源：
+* 查看安装的python包版本：`pip show packagename`
 
 ## 环境变量
 
@@ -108,3 +127,40 @@ use PicGo establish a bed of picture in the GitHub.
 * Setup GitHub token in developer setting to fill the settings of PicGo.
 * Fill the picture bed settings of GitHub in PicGo.
 * Typora setting the picture action.
+
+## Deep Learning
+
+### CUDA multi version control
+
+* bash setting
+
+  ```bash
+  export CUDA_HOME=/usr/local/cuda
+  export PATH=${CUDA_HOME}/bin:${PATH}
+  export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
+  ```
+
+* version switch
+
+  ```
+  sudo rm -rf /usr/local/cuda
+  sudo ln -s /usr/local/cuda-10.1 /usr/local/cuda
+  ```
+
+
+
+## Android Development
+
+### phone connection
+
+* `adb tcpip 5555 & adb connect ip_addr:5555`
+
+  both device needs to be in local network.
+
+* **Huawei Phone need to change USB config to MIPI mode.**
+
+
+
+
+
+  wget https://github.com/NixOS/patchelf/releases/download/${PATCHELF_VERSION}/patchelf-${PATCHELF_VERSION}-x86_64.tar.gz
