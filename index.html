@@ -1,9 +1,405 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Hanwei He</title>
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="files/icon.jpg">
+    <meta name="keywords" content="YOUR NAME, YOUR KEYWORDS"> 
+    <meta name="description" content="YOUR NAME's Home">
+    <meta name="google-site-verification" content="">
+    <link rel="stylesheet" href="./files/jemdoc.css" type="text/css">
+    <title>YOUR NAME</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        .smaller-image {
+            width: 20%;
+        }
+        .container {
+            position: relative;
+            display: inline-block;   
+        }
+        .image {
+            display: block;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        .video-label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: #ea3323;
+            color: white;
+            padding: 0px 10px;
+            border-radius: 3px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 40px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:small;
+        }
+        .research-hightlight {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .arxiv-label {
+            position: absolute;
+            top: 10px;
+            left: -5px;
+            background-color: #a624a6;
+            color: white;
+            padding: 0px 10px;
+            border-radius: 3px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 40px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:x-small;
+        }
+    </style>
+    <script type="text/javascript" src="./files/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<div id="layout-content" style="margin-top:25px">
+ <a href="https://github.com/YOUR_GITHUB" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill: #527bbd; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+<table>
+    <tbody>
+        <tr>
+            <td width="720">
+                <div id="toptitle">                    
+                    <h1>YOUR NAME</h1>
+                    <h1></h1>
+                    <img src="./files/sign.jpg" alt="" style="width: 25%;">
+                    <img src="./files/institute/your-institute-logo.png" alt="" style="width: 30%;">
+                </div>
+                <h3 style="margin-top: -20px;">YOUR POSITION @ YOUR INSTITUTION</h3>
+                <h3 style="margin-top: -10px;">YOUR DEPARTMENT/LAB</h3>
+                <p style="margin-top: 20px;">
+                    <a href="mailto:your.email@example.com" target="_blank"><img src="./assets/images/email.svg" height="32px" style="margin-bottom:-4px"></a>&nbsp;
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank"><img src="./files/icon/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
+                    <a href="https://github.com/YOUR_GITHUB" target="_blank"><img src="./files/icon/github_s.jpg" height="30px" style="margin-bottom:-3px"></a>&nbsp;
+                    <a href="https://twitter.com/YOUR_TWITTER" target="_blank"><img src="./files/icon/X_icon.png" height="30px" style="margin-bottom:-3px"></a>&nbsp;
+                    <a href="./files/my_wechat.jpg" target="_blank"><img src="./assets/images/wechat.svg" height="30px" style="margin-bottom:-3px"></a>&nbsp;
+                    <!-- Add more social media links as needed -->
+                    <p></p>
+                    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2FYOUR_SITE&count_bg=%233FDBD2&title_bg=%233D62C7&icon=googlepodcasts.svg&icon_color=%23E9F742&title=Page+Viewers&edge_flat=false"/></a>
+                    <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/YOUR_GITHUB">
+                    <img alt="GitHub followers" src="https://img.shields.io/github/followers/YOUR_GITHUB">
+                </p>
+            </td>
+            <td>
+                <img src="./files/avatar/your-avatar.jpg" border="0" width="250"><br>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2 style="margin-top: -10px;">Biography</h2>
+<div style="font-size: 15px">
+Hi! I am <strong>YOUR NAME</strong>, currently a <u>YOUR POSITION</u> at YOUR INSTITUTION.<br><br>
+
+YOUR BIO PARAGRAPH HERE<br>
+
+<br>
+<p>My research interests mainly focus on <b>YOUR RESEARCH INTERESTS</b>.</p>
+<p><i style="color: red; display: inline;">Feel free to contact me by email if you are interested in discussing or collaborating with me.</i></p>
+</div>
+
+<h2>News</h2>
+<div style="width: 100%; background-color: white;">
+    <div style="width: 100%; overflow-x: scroll; white-space: nowrap;">
+        <!-- Add your highlight images/videos here -->
+        <img src="./files/photo/highlight1.jpg" style="width: auto; height: 80px;">
+        <div class="container">
+            <a href="YOUR_VIDEO_LINK" target="_blank">
+            <img src="./files/photo/highlight2.jpg" style="width: auto; height: 80px;">
+            <div class="video-label">Video</div>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 5px; font-size: small; margin-bottom: 0px;">⬅ scrollable</div>
+<div style="height: 120px; overflow: auto; font-size: small;">
+<ul>
+    <li>[MM/YYYY] NEWS ITEM 1</li>
+    <li>[MM/YYYY] NEWS ITEM 2</li>
+    <li>[MM/YYYY] NEWS ITEM 3</li>
+    <!-- Add more news items -->
+</ul>
+</div>
+<div style="margin-top: 5px; font-size: small; margin-bottom: 0px;">⬆ scrollable</div>
+
+
+
+<h2>Education</h2>
+<table id="tbPublications" width="100%">
+    <tbody>
+        <tr>
+            <td width="320">
+                <img src="./files/institute/university1.png" width="220px" style="margin-left: 40px">
+            </td>                
+            <td>
+                <p><b>UNIVERSITY NAME, LOCATION</b></p>
+                <div style="font-size: 12px">DEGREE INFORMATION</div>
+                <div style="font-size: 12px">DATES</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table id="tbPublications" width="100%" style="margin-top: 0px">
+    <table>
+        <tr>
+            <td width="320">
+                <img src="./files/institute/university2.jpg" width="200px" style="margin-left: 50px">
+            </td>                
+            <td>
+                <p><b>UNIVERSITY NAME, LOCATION</b></p>
+                <div style="font-size: 12px">DEGREE INFORMATION</div>
+                <div style="font-size: 12px">DATES</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2> Publications | <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">[Google Scholar]</a></h2>
+<div style="height: 10px;"></div>
+<div style="text-align: center; position: relative; margin-bottom: 20px; margin-top: 0px;">
+    <span style="position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); background-color: rgba(128, 128, 128, 0.3); padding: 0 10px;">
+        <b>Recent Research Highlights</b>
+    </span>
+</div>
+<div class="research-hightlight">
+    <div>
+        <video autoplay loop muted width="100%" height="auto" x5-video-player-fullscreen="true"
+        x5-playsinline
+        playsinline
+        webkit-playsinline>
+            <source src="./files/work/demo1.mp4" type="video/mp4">
+            video error
+          </video>
+          <div style="text-align: center; margin-top: -10px; font-size: small;">PROJECT TITLE 1<i>, CONFERENCE/JOURNAL</i></div>
+    </div>
+    <div>
+        <video autoplay loop muted width="100%" height="auto" x5-video-player-fullscreen="true"
+        x5-playsinline
+        playsinline
+        webkit-playsinline>
+            <source src="./files/work/demo2.mp4" type="video/mp4">
+            video error
+          </video>
+          <div style="text-align: center; margin-top: -10px; font-size: small;">PROJECT TITLE 2, <i>CONFERENCE/JOURNAL</i></div>
+    </div>
+</div>    
+
+<div style="text-align: center; position: relative; margin-bottom: 50px; margin-top: 20px;">
+    <span style="position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); background-color: rgba(128, 128, 128, 0.3); padding: 0 10px;">
+        <b>Full List (Selected papers are highlighted)</b>
+    </span>
+</div>
+
+<!-- Publication Template -->
+<table id="tbPublications" width="100%" cellspacing='0' style="background-color: #ffffdf;">
+    <tbody>
+    <tr style="width: 100%;">
+        <td width="20%" style="padding: 10px">
+            <div class="container">
+                <img src="./files/work/paper1.png" width="180px" style="box-shadow: 4px 4px 4px #888888; margin-left: 10px;">
+                <!-- <div class="arxiv-label" style="margin-left: 10px; width: 80px;">Under Review</div> -->
+            </div>
+        </td>                
+        <td style="padding: 10px">
+            <b style="font-size: 15px; color: #456fc3;">PAPER TITLE</b>
+            <div style="height: 5px;"></div>
+            <div style="font-size: 12px">AUTHOR 1, <b><u>YOUR NAME</u></b>, AUTHOR 2</div>
+            <div style="height: 5px;"></div>
+            <div style="font-size: 12px">CONFERENCE/JOURNAL YEAR</div>
+            <div style="height: 5px;"></div>
+            <div style="font-size: 12px"><a href="#" target="_blank">Project Page</a> / <a href="#" target="_blank">Paper</a> / <a href="#" target="_blank">arXiv</a> / <a href="#" target="_blank">Code</a></div>
+            <div style="height: 5px;"></div>
+            <div style="font-size: 12px; color: gray;">BRIEF DESCRIPTION OF THE PAPER</div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- You can duplicate this table for each publication -->
+
+<h2>Research &amp; Visiting Experience</h2>
+<div style="height: 10px"></div>
+<table id="tbPublications" width="100%">
+    <tbody>
+    <tr>
+        <td width="250">
+        <img src="./files/institute/lab1.png" width="200px" style="margin-left: 15px; padding-top: 0px;"> 
+        </td>                
+        <td>
+        <p style="font-size: 15px"><b><a href="#" target="_blank">LAB/RESEARCH GROUP</a>, INSTITUTION</b></p>
+        <p style="font-size: 12px">DATES, POSITION</p>
+        <p style="font-size: 12px; margin-top: -5px;">Supervised by <a href="#" target="_blank">SUPERVISOR NAME</a></p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Competition Awards (Selected)</h2>
+<p></p>
+<table style="border-spacing:2px">
+    <tr></tr>
+    <td width="280px">
+            <img src="./files/photo/award1.jpg" width="200px" style="box-shadow: 4px 4px 8px #888; margin-left: 32px; margin-top: 0px;">
+    </td>                
+    <td style="font-size: 15px;">
+        <b>COMPETITION NAME</b>
+        <p><b>COMPETITION NAME IN OTHER LANGUAGE (if applicable)</b></p>
+        <p><i style="color: red; display: inline;"><b>AWARD</b></i> 🏆</p>
+        <div style="font-size: 15px">With TEAMMATE NAMES. Supervised by <a href="#">SUPERVISOR NAME.</a></div>
+        <div style="font-size: 15px">Team: TEAM NAME</div>
+    </td>
+</table>
+
+<h2>Honors</h2>
+<table style="border-spacing:2px; font-size: 15px;">
+    <tbody>
+        <div style="text-align: center; position: relative; margin-bottom: 40px; margin-top: 20px;">
+            <span style="position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); background-color: rgba(128, 128, 128, 0.3); padding: 0 10px;">
+                <b>Selected</b>
+            </span>
+        </div>
+        <p></p>
+        <tr>
+            <td width="270px">
+            <img src="./files/award/award1.png" width="170px" style="box-shadow: 4px 4px 8px #888; margin-left: 50px; margin-top: 0px;">
+            </td>                
+            <td>
+                <b>AWARD NAME 🏆</b>
+                <div style="height: 5px;"></div>
+                <div style="height: 8px;"></div>
+                <div><i>AWARD DESCRIPTION</i></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="text-align: center; position: relative; margin-bottom: 40px; margin-top: 20px;">
+    <span style="position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); background-color: rgba(128, 128, 128, 0.3); padding: 0 10px;">
+        <b>Others</b>
+    </span>
+</div>
+
+<div style="height: 200px; overflow: auto; font-size: 15px;">
+    <ul>
+        <li>[YYYY] AWARD NAME, DESCRIPTION</li>
+        <div style="margin-top: -10px;"></div>
+        <li>[YYYY] AWARD NAME, DESCRIPTION</li>
+        <div style="margin-top: -10px;"></div>
+        <!-- Add more awards as needed -->
+    </ul>
+</div>
+<div style="margin-top: 5px; font-size: small; margin-bottom: 0px;">⬆ scrollable</div>
+
+<h2>Open-source Projects</h2>
+<div style="text-align: center;">
+    <a href="https://github.com/YOUR_GITHUB/">
+        <img height="200" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB" />
+    </a>
+    <a href="https://github.com/YOUR_GITHUB/">
+        <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=YOUR_GITHUB&layout=compact&langs_count=8&card_width=320" />
+    </a>
+</div>
+
+<ul style="font-size: 15px">
+    <li>PROJECT NAME 1: <a href="#">PROJECT LINK</a></li>  
+    <div style="margin-top: -10px;"></div>
+    <li>PROJECT NAME 2: <a href="#">PROJECT LINK</a></li>  
+    <div style="margin-top: -10px;"></div>
+</ul>
+
+<h2>Leadership Experience</h2>
+<ul style="font-size: 15px">
+    <li>DATES, <b>ROLE, ORGANIZATION</b></li>  
+    <div style="margin-top: -10px;"></div>
+    <li>DATES, <b>ROLE, ORGANIZATION</b></li>  
+    <div style="margin-top: -10px;"></div>
+</ul>
+
+<h2>Academic Organizations</h2>
+<ul style="font-size: 15px">
+    <li><a href="#">ORGANIZATION NAME</a>, YOUR ROLE</li>  
+    <div style="margin-top: -10px;"></div>
+    <li><a href="#">ORGANIZATION NAME</a>, YOUR ROLE</li>  
+</ul>
+
+<h2>Academic Services</h2>
+<table id="tbPublications" width="100%" style="font-size: 15px;">
+    <tbody>
+    <tr>
+        <td width="400px">
+        <img src="./files/work/service1.png" width="350px" style="box-shadow: 4px 4px 8px #888; margin-left: 20px;">
+        </td>                
+        <td>
+        <p><b>YOUR ROLE</b><br>EVENT NAME</p>
+        <div style="font-size: small">DESCRIPTION OF YOUR CONTRIBUTION OR THE EVENT</div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div style="height: 10px;"></div>
+<strong>Reviewer</strong>: CONFERENCE/JOURNAL NAMES
+
+<h2>Engineering Experience</h2>
+<table id="tbPublications" width="100%" style="font-size: 15px;">
+    <tbody>
+    <tr>
+        <td width="240px">
+        <img src="./files/work/project1.jpg" width="180px" style="box-shadow: 4px 4px 8px #888; margin-left: 25px;">
+        </td>                
+        <td>
+        <p><b>PROJECT NAME:<br>PROJECT DESCRIPTION</b><br><i style="font-size: small">DATE, YOUR ROLE</i></p>
+        <div style="font-size: small">DETAILED DESCRIPTION OF THE PROJECT AND YOUR CONTRIBUTION</div>
+        <div style="font-size: small"><b>Outcome</b>: PROJECT OUTCOMES OR IMPACT</div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Clubs</h2>
+<ul style="font-size: 15px">
+    <li>DATES, CLUB/ORGANIZATION NAME</li>  
+    <div style="margin-top: -10px;"></div>
+    <li>DATES, CLUB/ORGANIZATION NAME</li>  
+</ul>
+
+<h2>Talks</h2>
+[MM/YYYY], <a href="#" target="_blank">TALK TITLE</a> @ VENUE<br>
+BRIEF DESCRIPTION OF THE TALK<br>
+
+<h2>Reports</h2>
+<div style="font-size: 15px">
+[MM/YYYY], <a href="#" target="_blank">REPORT TITLE</a><br>
+DESCRIPTION OF THE REPORT<br>
+<div style="height: 4px"></div>
+[MM/YYYY], <a href="#" target="_blank">REPORT TITLE</a><br>
+DESCRIPTION OF THE REPORT<br>
+</div>
+
+<div style="margin: -20pt;"></div>
+<div id="footer">
+    <div id="footer-text"></div>
+</div>
+
+<p><center><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <a style="color: black; font-size: small;"><i>Latest updated in MONTH YEAR</i></a>
+<p></p><center> © YOUR NAME</center><p></p>
+
+</div>
+</body>
 </html>
