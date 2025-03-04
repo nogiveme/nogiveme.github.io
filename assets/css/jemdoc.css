@@ -6,11 +6,42 @@ table#tlayout {
     background: white;
 }
 
-body {
-	background: white;
-	font-family: Georgia, serif;
-	padding-bottom: 8px;
-	margin: 0;
+img {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  background-color: #f8f8f8; 
+}
+
+body { 
+  font-family: 'Source Han Sans CN', 'Times New Roman';
+  color: #333333;
+  background-color: #ffffff; 
+  text-align: left;
+  margin-top: 30px; 
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  max-width: 960px;
+  line-height: 1.5;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 }
 
 #layout-menu {
@@ -56,23 +87,22 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #F44336;
 	text-decoration: none;
+	transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
 a:hover {
-	border-bottom: 1px gray dotted;
+	color: #D32F2F;
+	border-bottom: 1px #D32F2F dotted;
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
-	border-bottom: 1px gray solid;
+	color: #F44336;
+	border-bottom: 1px #F44336 solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
-	text-decoration: none;
-}
-#layout-menu a:hover {
+	color: #F44336;
 	text-decoration: none;
 }
 
@@ -92,12 +122,12 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	border-bottom: 2px solid rgba(244, 67, 54, 0.2);
 }
 
 /* Reduce space if we begin the page with a title. */
 div#toptitle + h2, div#toptitle + h3 {
-	margin-top: -0.7em;
+	margin-top: 0em;
 }
 
 div#subtitle {
@@ -117,22 +147,25 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #9D0A12;
 	margin-top: 0.7em;
-	margin-bottom: 0.3em;
+	margin-bottom: 0.5em;
 	padding-bottom: 0.2em;
-	line-height: 1.0;
+	line-height: 1.2;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid rgba(244, 67, 54, 0.3);
 }
 
 h1 {
 	font-size: 165%;
+	padding-bottom: 0.3em;
+	font-weight: 600;
 }
 
 h2 {
 	padding-top: 0.8em;
 	font-size: 125%;
+	font-weight: 500;
 }
 
 h2 + h3 {
@@ -158,14 +191,17 @@ pre {
 
 div#footer {
 	font-size: small;
-	border-top: 1px solid #c0c0c0;
-	padding-top: 0.1em;
+	border-top: 2px solid #F44336;
+	padding-top: 0.8em;
 	margin-top: 4.0em;
-	color: #c0c0c0;
+	color: #757575;
+	background-color: #FFF8E1;
+	padding: 15px;
+	border-radius: 0 0 8px 8px;
 }
 
 div#footer a {
-	color: #80a0b0;
+	color: #F44336;
 }
 
 div#footer-text {
@@ -205,8 +241,8 @@ p + ul, p + ol {
 	margin-top: -0.5em;
 }
 
-li ul, li ol {
-	margin-top: -0.3em;
+li {
+	margin-top:0.9em;
 }
 
 ol {
@@ -239,18 +275,20 @@ div.codeblock, div.infoblock {
 
 div.blocktitle {
 	font-weight: bold;
-	color: #cd7b62;
+	color: #F44336;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
 }
 
 div.blockcontent {
-	border: 1px solid silver;
-	padding: 0.3em 0.5em;
+	border: 1px solid rgba(244, 67, 54, 0.3);
+	padding: 0.8em 1em;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 div.infoblock > div.blockcontent {
-	background: #ffffee;
+	background: #FFF8E1;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
@@ -270,7 +308,8 @@ div.infoblock p + p {
 }
 
 div.codeblock > div.blockcontent {
-	background: #f6f6f6;
+	background: #f8f8f8;
+	border-radius: 5px;
 }
 
 span.pycommand {
@@ -335,19 +374,6 @@ img.eqwl {
 	margin: 0;
 }
 
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-
-td {
-    padding: 2px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid gray;
-}
-
 table + table {
     margin-top: 1em;
 }
@@ -364,4 +390,112 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+/* Modern additions */
+.modern-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.modern-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    margin-right: 5px;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background-color: #F44336;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-dark {
+    background-color: #333;
+    color: white;
+}
+
+.section-divider {
+    text-align: center;
+    position: relative;
+    margin: 25px 0;
+}
+
+.section-divider span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(244, 67, 54, 0.1);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.scrollable-container {
+    border: 1px solid rgba(244, 67, 54, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: rgba(244, 67, 54, 0.5);
+    border-radius: 3px;
+}
+
+.highlight-item {
+    border-left: 3px solid #F44336;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    background-color: rgba(244, 67, 54, 0.03);
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.accent-item {
+    border-left: 3px solid #4CAF50;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    background-color: rgba(76, 175, 80, 0.03);
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
 }
