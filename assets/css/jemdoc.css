@@ -22,12 +22,12 @@ img:hover {
 }
 
 html {
-  background-color: #f8f8f8; 
+  background-color: #f5f5f5; 
 }
 
 body { 
-  font-family: 'Source Han Sans CN', 'Times New Roman';
-  color: #333333;
+  font-family: 'Noto Sans SC', 'Noto Serif SC', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial, 'Times New Roman', serif;
+  color: #212121;
   background-color: #ffffff; 
   text-align: left;
   margin-top: 30px; 
@@ -39,14 +39,14 @@ body {
   padding-top: 10px;
   padding-bottom: 30px;
   max-width: 960px;
-  line-height: 1.5;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
 }
 
 #layout-menu {
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
+	background: #fafafa;
+	border: 1px solid #e0e0e0;
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -58,7 +58,7 @@ body {
 }
 
 #layout-menu td {
-	background: #f4f4f4;
+	background: #f8f8f8;
     vertical-align: top;
 }
 
@@ -87,22 +87,22 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #F44336;
+	color: #424242;
 	text-decoration: none;
 	transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
 a:hover {
-	color: #D32F2F;
-	border-bottom: 1px #D32F2F dotted;
+	color: #000000;
+	border-bottom: 1px #424242 dotted;
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #F44336;
-	border-bottom: 1px #F44336 solid;
+	color: #000000;
+	border-bottom: 1px #000000 solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #F44336;
+	color: #333333;
 	text-decoration: none;
 }
 
@@ -122,7 +122,7 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 2px solid rgba(244, 67, 54, 0.2);
+	border-bottom: 2px solid rgba(33, 33, 33, 0.15);
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -147,13 +147,13 @@ strong {
 
 
 h1, h2, h3 {
-	color: #9D0A12;
+	color: #1a1a1a;
 	margin-top: 0.7em;
 	margin-bottom: 0.5em;
 	padding-bottom: 0.2em;
 	line-height: 1.2;
 	padding-top: 0.5em;
-	border-bottom: 1px solid rgba(244, 67, 54, 0.3);
+	border-bottom: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 h1 {
@@ -191,17 +191,17 @@ pre {
 
 div#footer {
 	font-size: small;
-	border-top: 2px solid #F44336;
+	border-top: 2px solid #333333;
 	padding-top: 0.8em;
 	margin-top: 4.0em;
-	color: #757575;
-	background-color: #FFF8E1;
+	color: #666666;
+	background-color: #f8f8f8;
 	padding: 15px;
 	border-radius: 0 0 8px 8px;
 }
 
 div#footer a {
-	color: #F44336;
+	color: #000000;
 }
 
 div#footer-text {
@@ -275,20 +275,20 @@ div.codeblock, div.infoblock {
 
 div.blocktitle {
 	font-weight: bold;
-	color: #F44336;
+	color: #1a1a1a;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
 }
 
 div.blockcontent {
-	border: 1px solid rgba(244, 67, 54, 0.3);
+	border: 1px solid rgba(33, 33, 33, 0.2);
 	padding: 0.8em 1em;
 	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(248, 248, 248, 0.7);
 }
 
 div.infoblock > div.blockcontent {
-	background: #FFF8E1;
+	background: #f5f5f5;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
@@ -310,6 +310,7 @@ div.infoblock p + p {
 div.codeblock > div.blockcontent {
 	background: #f8f8f8;
 	border-radius: 5px;
+	border: 1px solid #e0e0e0;
 }
 
 span.pycommand {
@@ -423,22 +424,22 @@ table.imgtable, table.imgtable td {
 }
 
 .btn-primary {
-    background-color: #F44336;
+    background-color: #333333;
     color: white;
 }
 
 .btn-secondary {
-    background-color: #FFC107;
-    color: #333;
+    background-color: #757575;
+    color: white;
 }
 
 .btn-success {
-    background-color: #4CAF50;
+    background-color: #444444;
     color: white;
 }
 
 .btn-dark {
-    background-color: #333;
+    background-color: #000000;
     color: white;
 }
 
@@ -454,14 +455,14 @@ table.imgtable, table.imgtable td {
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    background-color: rgba(244, 67, 54, 0.1);
+    background-color: rgba(33, 33, 33, 0.05);
     padding: 5px 10px;
     border-radius: 3px;
     font-weight: 500;
 }
 
 .scrollable-container {
-    border: 1px solid rgba(244, 67, 54, 0.2);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 5px;
     padding: 15px;
     max-height: 200px;
@@ -478,24 +479,24 @@ table.imgtable, table.imgtable td {
 }
 
 .scrollable-container::-webkit-scrollbar-thumb {
-    background: rgba(244, 67, 54, 0.5);
+    background: rgba(66, 66, 66, 0.4);
     border-radius: 3px;
 }
 
 .highlight-item {
-    border-left: 3px solid #F44336;
+    border-left: 3px solid #333333;
     padding-left: 12px;
     margin-bottom: 12px;
-    background-color: rgba(244, 67, 54, 0.03);
+    background-color: rgba(33, 33, 33, 0.03);
     padding: 10px;
     border-radius: 0 5px 5px 0;
 }
 
 .accent-item {
-    border-left: 3px solid #4CAF50;
+    border-left: 3px solid #757575;
     padding-left: 12px;
     margin-bottom: 12px;
-    background-color: rgba(76, 175, 80, 0.03);
+    background-color: rgba(117, 117, 117, 0.03);
     padding: 10px;
     border-radius: 0 5px 5px 0;
 }
