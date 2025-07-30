@@ -26,7 +26,7 @@ html {
 }
 
 body { 
-  font-family: 'Noto Sans SC', 'Noto Serif SC', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial, 'Times New Roman', serif;
+  font-family: 'Times New Roman', 'Noto Sans SC', 'Noto Serif SC', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial, serif;
   color: #212121;
   background-color: #ffffff; 
   text-align: left;
@@ -147,7 +147,8 @@ strong {
 
 
 h1, h2, h3 {
-	color: #1a1a1a;
+	/* color: #1a1a1a; */
+	color: #A40007;
 	margin-top: 0.7em;
 	margin-bottom: 0.5em;
 	padding-bottom: 0.2em;
